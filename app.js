@@ -7,6 +7,8 @@ app.get('/', (req, res) => {
 })
 
 
+app.use('/static', express.static('public'))
+
 app.listen(port, () => {
   console.log(`app listening on port http://localhost:${port}`)
 })
